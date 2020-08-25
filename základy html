@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">      
+    <head>         
+        <title>Fotbal</title>         
+        <meta charset="UTF-8">         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="css.css">
+    </head>     
+    <body>          
+        <h1 class="redcolour">O fotbale </h1>        
+        <h1> Pravidla a historie </h1>        
+        <dl><dt><b>Fotbal</b></dt><dd>Tento nejsledovanější sport na světě pochází z Anglie, odkud také pochází nejlepší liga, Premier League. 
+                Na každé straně stojí dva týmy po jedenácti hráčích a k dispozici mají tři střídání. Mezi nejsledovanější soutěže patří bez debat
+                Mistrovství světa, kde dokonce finálový zápas překonal sledovanost olympiády. Nejvíce trofejí z Mistrovství světa má Brazílie, která
+                turnaj ovládla 5x a koná se jednou za 4 roky.</dd></dl> <hr>       
+        <h2><a href="https://www.livesport.cz/fotbal/cesko/fortuna-liga/tabulka/" class="redcolour">Tady máte pohled na Českou ligu. </a></h2>           
+        <br>        
+        <h3><a href="mic.jpg" id="grey"> Jak vypadá fotbalový míč?</a></h3>   
+        <a href="mic.jpg"><img src="mic.jpg"></a>        
+        <hr>        
+        <table cellpadding="3px" border="1">             
+            <thead>                 
+                <tr><td >1</td><td>2</td><td colspan="2">3/4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>             
+            </thead>                 <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>                 
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>                 
+            <tbody>                 <tr><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td></tr>                 
+                <tr><td>41</td><td>42</td><td>43</td><td>44</td><td>45</td><td>46</td><td>47</td><td>48</td><td>49</td><td>50</td></tr>                 
+                <tr><td>51</td><td>52</td><td>53</td><td>54</td><td>55</td><td>56</td><td>57</td><td>58</td><td>59</td><td>60</td></tr>             
+            </tbody>             
+            <tfoot>                 
+                <tr><td>61</td><td>62</td><td>63</td><td>64</td><td>65</td><td>66</td><td>67</td><td>68</td><td>69</td><td>70</td></tr>                 
+                <tr><td >71</td><td>72</td><td rowspan="2">73/83</td><td>74</td><td>75</td><td>76</td><td>77</td><td>78</td><td>79</td><td>80</td></tr>                 
+                <tr id="grey"><td>81</td><td>82</td><td>84</td><td>85</td><td>86</td><td>87</td><td>88</td><td>89</td><td>90</td></tr>                 
+                <tr id="grey"><td>91</td><td>92</td><td>93</td><td>94</td><td>95</td><td>96</td><td>97</td><td>98</td><td>99</td><td>100</td></tr>             
+            </tfoot>          
+        </table>
+        <hr>
+        <h4><i>Nejlepší hráči na světě</i></h4>
+        <ol>            
+            <li>Lionel Messi</li>            
+            <li>Robert Lewandowski</li>            
+            <li>Cristiano Ronaldo</li>        
+        </ol>        
+        <h5>historicky</h5>        
+        <ul>
+            <li>Pelé</li>            
+            <li>Ronaldinho</li>            
+            <li>Ronaldo Fenomeno</li></ul>       
+        <hr>     
+        <form>             
+            <input name="username" type="text" value="Martin"><br>             
+            <input name="password" type="password" value="heslo123456"><br>             
+            <select name='rad'>                 
+                <option value="1">sleduju fotbal</option>                 
+                <option value="0">Nesleduju fotbal</option>                 
+            </select>             
+            <br>            
+            <input type="radio" name="hospital" value="1" checked>Sleduju fotbal<br>             
+            <input type="radio" name="hospital" value="0">Nesleduju fotbal<br>             
+            <textarea name="message" rows="5" cols="30">sem pište dotazy.</textarea>             
+            <br>              
+            <button type="button" onclick="alert('Tohle už neklikej')">button</button>       
+                <input type="submit">              
+        </form>                     
+    </body>           
+</html>
+<button><b>Ahoj</b></button>
