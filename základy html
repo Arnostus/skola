@@ -61,7 +61,8 @@
             <br>              
             <button type="button" onclick="alert('Tohle už neklikej')">button</button>       
                 <input type="submit">              
-        </form>                     
+        </form>
+        <a href="https://validator.w3.org/nu/#file">odkaz na validator</a>
     </body>           
 </html>
 <button><b>Ahoj</b></button>
