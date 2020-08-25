@@ -1,0 +1,211 @@
+<?PHP
+
+require 'C:/wamp64/www/tracy/tracy.phar';
+require_once('index.php');
+
+use Tracy\Debugger;
+
+Debugger::enable();
+Debugger::$strictMode = true;
+
+echo 15;
+echo"<br>";
+print (1.1);
+echo"<br>";
+echo "cokkies";
+echo"<br>";
+print(TRUE);
+echo"<br>";
+echo "zde spojuji jeden řetězec" . " s druhým řetězcem";
+echo"<br>";
+echo "<img src=\"art.jpg\" alt=\"mno\">";
+echo "<br>";
+echo "\\";
+echo "<br>";
+echo "OPERÁTORY: ";
+echo "<br>";
+$a = 3;
+$b = 5;
+echo "a=" . $a . "<br>" . "b=" . $b . "<br>";
+echo "sčítání,odčítání,děleno,krát";
+dump($a + $b);
+echo"<br>";
+dump($a - $b);
+echo"<br>";
+dump($a / $b);
+echo"<br>";
+dump($a * $b);
+echo"<br>" . "<br>";
+echo "a++,++a, a--,--a, a+=b a-=b, a*=b,a/=b";
+echo"<br>";
+dump($a++);
+$a = 3;
+echo"<br>";
+dump(++$a);
+$a = 3;
+echo"<br>";
+dump($a--);
+$a = 3;
+echo"<br>";
+dump(--$a);
+$a = 3;
+echo"<br>";
+dump($a += $b);
+$a = 3;
+echo"<br>";
+dump($a -= $b);
+$a = 3;
+echo"<br>";
+dump($a *= $b);
+$a = 3;
+echo"<br>";
+dump($a /= $b);
+$a = 3;
+echo"<br>" . "<br>";
+echo "a==b,a!=b, a>b, a < b" . "<br>";
+dump($a == $b);
+echo"<br>";
+dump($a != $b);
+echo"<br>";
+dump($a > $b);
+echo"<br>";
+dump($a < $b);
+echo"<br>" . "<br>";
+echo "a||b, a&&b, !a" . "<br>";
+$a = 0;
+$b = 1;
+echo "a=" . $a . "<br>" . "b=" . $b;
+echo"<br>";
+dump($a || $b);
+echo"<br>";
+dump($a && $b);
+echo "<br>";
+dump(!$a);
+$martin1 = 1;
+$martin2 = 1;
+if ($martin1 < $martin2) {
+    echo "Martin Arnost<br>";
+}
+if ($martin1 > $martin2) {
+    echo "Martin<br>";
+} else {
+    echo"Arnost<br>";
+}
+if ($martin1 >= $martin2) {
+    echo "martin<br>";
+    if ($martin1 == $martin2) {
+        echo "Arnost<br>";
+    }
+}
+switch ($martin1) {
+    case 0:
+        break;
+    case 1:
+        echo"ok boomer <br>";
+
+        break;
+    case 2:
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    case 5:
+        break;
+    default:
+        break;
+}
+$produkty = array(1 => "ok", 2 => "ok1", 3 => "ok2", 4 => "ok3", 5 => "ok4", 6 => "ok5", 7 => "ok6", 8 => "ok7", 9 => "ok8", 10 => "ok9");
+dump($produkty);
+$produkty1["ok"] = array();
+$produkty1["uk"] = array();
+$produkty1["ik"] = array(
+    array('jméno' => 'Max', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'dalmatín', 'věk' => 7),
+    array('jméno' => 'Msx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'pitbul', 'věk' => 2),
+    array('jméno' => 'Mdx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'buldok', 'věk' => 1),
+    array('jméno' => 'Mfx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'jezevčík', 'věk' => 6),
+    array('jméno' => 'Mgx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'kokršpaněl', 'věk' => 4),
+    array('jméno' => 'Mhx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'knírač', 'věk' => 10),
+    array('jméno' => 'Mjx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'pudl', 'věk' => 8),
+    array('jméno' => 'Mkx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'foxhound', 'věk' => 5),
+    array('jméno' => 'Mlx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'ohař', 'věk' => 3),
+    array('jméno' => 'Můx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'retrívr', 'věk' => 2),
+);
+dump($produkty1);
+
+$radekMartinArnost = 1; //mesic narozeni
+$sloupecMartinArnost = 17; //vek
+echo "<table border=1>";
+for ($i = 1; $i <= $radekMartinArnost; $i++) {
+    echo "<tr>";
+    for ($x = 1; $x <= $sloupecMartinArnost; $x++) {
+        echo "<td>" . $i . "-" . $x . "</td>";
+    }
+    echo "</tr>";
+}
+echo "</table><br><br><br>";
+
+echo abs(6) . "<br>"; //mat.funkce 1.
+echo cos(150) . "<br>"; //mat.funkce 2.
+$string = "Hello its me mario"; //řetězcová funkce 1.
+echo strstr($string, "its") . "<br>";
+echo strpos($string, "its") . "<br>"; //řetězcová funkce 2.
+echo sizeof($produkty); //funce pole 1.
+array_splice($produkty, 0, 1, "oi1"); //funkce pole 2.
+dump($produkty);
+
+$key = 1;
+foreach ($produkty as  $key =>$produkt) {
+    echo $key . "-" . $produkt . "<br>";
+}
+
+$rodneCislo = "030104/0421"; //zadání rodného čísla
+echo "<br> rodne cislo: " . $rodneCislo; //vypsání rodného čísla (spojené řetězce)
+$var = new zpracovaniRodneho($rodneCislo); //instance
+echo "<br>".$var->vek();
+echo $var->datum();
+echo "<br>".$var->pohlavi();
+
+
+echo "<form  method='POST'> 
+  Enter First Number:<input name='no_1' type='text'></br></br>
+  Enter second Number:<input name='no_2' type='text'><br></br>
+  Select your choice: 
+  <select name='sel'> 
+   <option>+</option> 
+   <option>-</option> 
+   <option>*</option> 
+   <option>/</option>
+   <option>%</option> 
+  </select> 
+  <input type='submit' name='res' value='Submit'> 
+</form>";
+  $a=$_POST["no_1"]; 
+  $b=$_POST["no_2"]; 
+  $op=$_POST["sel"]; 
+  if($op=="+") 
+  {     
+     $res=$a+$b;     
+     echo "Addition of numbers is: $res"; 
+  } 
+  if($op=="-") 
+  {     
+     $res=$a-$b;     
+     echo "Subtraction of numbers is: $res"; 
+  } 
+  if($op=="*") 
+  {     
+    $res=$a*$b;     
+    echo "Product of numbers is: $res"; 
+  } 
+  if($op=="/") 
+  {     
+    $res=$a/$b;
+    echo "Division of numbers is: $res"; 
+  } 
+  if($op=="%") 
+  {     
+    $res=$a%$b;     
+    echo "Modulus of numbers is: $res"; 
+  } 
+?>
