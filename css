@@ -1,0 +1,29 @@
+table, td {
+  padding: 1px;
+  border:1px solid white;
+}
+
+.redcolour {
+    color:darkred;
+}
+
+body {
+    background-color:silver;
+}
+
+.img {
+    width:250px;
+    height:250px;
+}
+
+#blueviolet {
+    background-color: grey;
+}
+
+div div div div h3{
+    color:lightblue;
+}
+
+body div p{
+    color:yellow;
+}
