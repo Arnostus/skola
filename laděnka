@@ -1,0 +1,9 @@
+<?php
+
+require 'C:/wamp64/www/tracy/tracy.phar';
+require_once('index.php');
+
+use Tracy\Debugger;
+
+Debugger::enable();
+Debugger::$strictMode = true;
