@@ -1,0 +1,78 @@
+<?php
+
+$radekMartinArnost = 1; //mesic narozeni
+$sloupecMartinArnost = 17; //vek
+echo "<table border=1>";
+for ($i = 1; $i <= $radekMartinArnost; $i++) {
+    echo "<tr>";
+    for ($x = 1; $x <= $sloupecMartinArnost; $x++) {
+        echo "<td>" . $i . "-" . $x . "</td>";
+    }
+    echo "</tr>";
+}
+echo "</table><br><br><br>";
+
+echo abs(6) . "<br>"; //mat.funkce 1.
+echo cos(150) . "<br>"; //mat.funkce 2.
+$string = "Hello its me mario"; //řetězcová funkce 1.
+echo strstr($string, "its") . "<br>";
+echo strpos($string, "its") . "<br>"; //řetězcová funkce 2.
+echo sizeof($produkty); //funce pole 1.
+array_splice($produkty, 0, 1, "oi1"); //funkce pole 2.
+dump($produkty);
+
+$key = 1;
+foreach ($produkty as  $key =>$produkt) {
+    echo $key . "-" . $produkt . "<br>";
+}
+
+$rodneCislo = "030104/0421"; //zadání rodného čísla
+echo "<br> rodne cislo: " . $rodneCislo; //vypsání rodného čísla (spojené řetězce)
+$var = new zpracovaniRodneho($rodneCislo); //instance
+echo "<br>".$var->vek();
+echo $var->datum();
+echo "<br>".$var->pohlavi();
+
+
+echo "<form  method='POST'> 
+  Enter First Number:<input name='no_1' type='text'></br></br>
+  Enter second Number:<input name='no_2' type='text'><br></br>
+  Select your choice: 
+  <select name='sel'> 
+   <option>+</option> 
+   <option>-</option> 
+   <option>*</option> 
+   <option>/</option>
+   <option>%</option> 
+  </select> 
+  <input type='submit' name='res' value='Submit'> 
+</form>";
+  $a=$_POST["no_1"]; 
+  $b=$_POST["no_2"]; 
+  $op=$_POST["sel"]; 
+  if($op=="+") 
+  {     
+     $res=$a+$b;     
+     echo "Addition of numbers is: $res"; 
+  } 
+  if($op=="-") 
+  {     
+     $res=$a-$b;     
+     echo "Subtraction of numbers is: $res"; 
+  } 
+  if($op=="*") 
+  {     
+    $res=$a*$b;     
+    echo "Product of numbers is: $res"; 
+  } 
+  if($op=="/") 
+  {     
+    $res=$a/$b;
+    echo "Division of numbers is: $res"; 
+  } 
+  if($op=="%") 
+  {     
+    $res=$a%$b;     
+    echo "Modulus of numbers is: $res"; 
+  } 
+?>
