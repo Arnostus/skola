@@ -1,0 +1,109 @@
+<html lang="cs">
+    <head>
+        <title>
+
+            Martin Arnošt ZT2A 
+
+        </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form action="index.php"> 
+            <input name ="username" type ="text" value="ahoj">
+            <input name ="password" type ="password" value="ahoj"><br>
+            <hr>                
+
+            <br>
+
+            <input type ="radio" name="studuje" value = "1" > studuje<br>
+            <input type ="radio" name="studuje" value = "0" checked>nestuduje<br><br>
+            <hr> 
+            <input type ="radio" name="pohlaví" value = "0" >muž<br>
+            <input type ="radio" name="pohlaví" value = "1" >žena<br>
+            <input type ="radio" name="pohlaví" value = "2" checked >buzerant<br>
+            <input type ="radio" name="pohlaví" value = "3" >transvestita<br>
+            <input type ="radio" name="pohlaví" value = "4" >neznámé<br>
+            <input type ="radio" name="pohlaví" value = "5" >neurčité<br>
+            <br><br>
+            <input type ="checkbox"name="sites"value="facebook">FB
+            <input type ="checkbox"name="sites"value="instagram">Ig
+            <input type ="checkbox"name="sites"value="skype">Skype
+            <br><br>        <br> <hr>
+
+            <select name="vaha"> 
+                <option value="0"selected>
+                <option value="1">1-5</option>
+                <option value="2">5-20</option>
+                <option value="3">20-50</option>
+                <option value="4">50-75</option>
+                <option value="5">75-100</option>
+                <option value="6">100-125</option>
+                <option value="7">125-150</option>
+                <option value="8">150-175</option>
+                <option value="9">175-200</option>
+
+
+
+            </select>
+            vaha
+
+            <br><br>
+            <hr>
+
+
+            <input type ="file" name="foto">
+        </form>
+
+
+        <br>
+
+
+        
+        <?PHP echo date('H:i:s');
+        ?>
+
+        <br><br><br>
+
+<?PHP echo "Ahoj" ?>
+
+        <br><br>
+<?PHP $jmeno = "Martin Arnošt";
+echo $jmeno; ?>
+
+        <br>
+        <?PHP
+        $text = "A soubezne linie se vcas rozesly, takze lidska pokoleni dnes neznaji system, v 
+nemz by jedna samicka zabezpecovala mrdani, zatimco vybrana skupiny obyvatelstva zajistovala
+zivobyti, a tak dal, protoze je samozrejme porad mozne, ze v budoucnu si zamrdame.Ano, je to vic 
+nez kurva mozne.
+Pred nekolika posranymi lety jsem jela vlakem z jihu Anglie do pochcanyho Yorku, kde se mi ctrtala 
+moznost na picu zamestnani v knihovna.Ten den, nevsedne bohaty na zkurveny dojmy a posrany zazitky, se mi zapsal
+do pochcany pameti predevsim proto, ze jsem behem pochcanych dvou dnu potkala dvě hovna, ktery vypadaji jako .";
+        $vulgaArr = array("pochcany", "pica", "zkurveny", "zmrdy");
+
+        var_dump(isValid2($text, $vulgaArr));
+
+        function isValid2($text, $vulgarArr) {
+            foreach ($vulgarArr as $word) {
+                if (strpos($text, $word) !== FALSE) {
+                    return TRUE;
+                }
+            }
+        }
+        $text1 = "nejsou stejny jako knihovna";
+       $text1 = explode(" ", $text1);
+                $vulgaArr = array("pochcany", "pica", "zkurveny", "zmrdy", "hovna");
+
+        var_dump(isValid($text1, $vulgaArr));
+
+        function isValid($text1, $vulgarArr) {
+            foreach($text1 as $slova){
+            foreach ($vulgarArr as $word1) {
+                if ($slova === $word1) {
+                    return TRUE;
+                }
+            }
+                    }
+                    return false;
+                }
