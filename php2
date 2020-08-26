@@ -39,16 +39,16 @@ dump($produkty);
 $produkty1["ok"] = array();
 $produkty1["uk"] = array();
 $produkty1["ik"] = array(
-    array('jméno' => 'Max', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'dalmatín', 'věk' => 7),
-    array('jméno' => 'Msx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'pitbul', 'věk' => 2),
-    array('jméno' => 'Mdx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'buldok', 'věk' => 1),
-    array('jméno' => 'Mfx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'jezevčík', 'věk' => 6),
-    array('jméno' => 'Mgx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'kokršpaněl', 'věk' => 4),
-    array('jméno' => 'Mhx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'knírač', 'věk' => 10),
-    array('jméno' => 'Mjx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'pudl', 'věk' => 8),
-    array('jméno' => 'Mkx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'foxhound', 'věk' => 5),
-    array('jméno' => 'Mlx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'ohař', 'věk' => 3),
-    array('jméno' => 'Můx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'retrívr', 'věk' => 2),
+    array('jméno' => 'Akim', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'dalmatín', 'věk' => 7),
+    array('jméno' => 'Rex', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'pitbul', 'věk' => 2),
+    array('jméno' => 'Tom', 'pohlaví' => 'H', 'zvíře' => 'pes', 'rasa' => 'buldok', 'věk' => 1),
+    array('jméno' => 'Alík', 'pohlaví' => 'H', 'zvíře' => 'pes', 'rasa' => 'jezevčík', 'věk' => 6),
+    array('jméno' => 'Arny', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'kokršpaněl', 'věk' => 4),
+    array('jméno' => 'Oudie', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'knírač', 'věk' => 10),
+    array('jméno' => 'Garfield', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'pudl', 'věk' => 8),
+    array('jméno' => 'Buřtík', 'pohlaví' => 'H', 'zvíře' => 'pes', 'rasa' => 'foxhound', 'věk' => 5),
+    array('jméno' => 'Špek', 'pohlaví' => 'K', 'zvíře' => 'pes', 'rasa' => 'ohař', 'věk' => 3),
+    array('jméno' => 'Martin', 'pohlaví' => 'H', 'zvíře' => 'pes', 'rasa' => 'retrívr', 'věk' => 2),
 );
 dump($produkty1);
 
