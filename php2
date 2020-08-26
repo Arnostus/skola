@@ -1,0 +1,55 @@
+<?php
+
+$martinArnošt1 = 1;
+$martinArnošt2 = 1;
+if ($martinArnošt1 < $martinArnošt2) {
+    echo "Martin Arnost<br>";
+}
+if ($martinArnošt1 > $martinArnošt2) {
+    echo "Martin<br>";
+} else {
+    echo"Arnost<br>";
+}
+if ($martinArnošt1 >= $martinArnošt2) {
+    echo "martin<br>";
+    if ($martinArnošt1 == $martinArnošt2) {
+        echo "ArnostArnošt<br>";
+    }
+}
+switch ($martinArnošt1) {
+    case 0:
+        break;
+    case 1:
+        echo"ok boomer <br>";
+
+        break;
+    case 2:
+        break;
+    case 3:
+        break;
+    case 4:
+        break;
+    case 5:
+        break;
+    default:
+        break;
+}
+$produkty = array(1 => "ok", 2 => "ok1", 3 => "ok2", 4 => "ok3", 5 => "ok4", 6 => "ok5", 7 => "ok6", 8 => "ok7", 9 => "ok8", 10 => "ok9");
+dump($produkty);
+$produkty1["ok"] = array();
+$produkty1["uk"] = array();
+$produkty1["ik"] = array(
+    array('jméno' => 'Max', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'dalmatín', 'věk' => 7),
+    array('jméno' => 'Msx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'pitbul', 'věk' => 2),
+    array('jméno' => 'Mdx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'buldok', 'věk' => 1),
+    array('jméno' => 'Mfx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'jezevčík', 'věk' => 6),
+    array('jméno' => 'Mgx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'kokršpaněl', 'věk' => 4),
+    array('jméno' => 'Mhx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'knírač', 'věk' => 10),
+    array('jméno' => 'Mjx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'pudl', 'věk' => 8),
+    array('jméno' => 'Mkx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'foxhound', 'věk' => 5),
+    array('jméno' => 'Mlx', 'pohlaví' => 'F', 'druh' => 'pes', 'rasa' => 'ohař', 'věk' => 3),
+    array('jméno' => 'Můx', 'pohlaví' => 'M', 'druh' => 'pes', 'rasa' => 'retrívr', 'věk' => 2),
+);
+dump($produkty1);
+
+?>
